@@ -1,0 +1,300 @@
+.step {
+  /* position: absolute; */
+  width: 100%;
+  color: hsl(229, 24%, 87%);
+  padding: 15px;
+  border-radius: 10px;
+  height: min-content;
+  background-color: white;
+  text-align: start;
+  margin-top: -87px;
+  /* position: absolute; */
+  /* +top: -70px; */
+}
+
+.step-2 > li:hover,
+.step-3 > li:hover {
+  border: 1px hsl(228, 100%, 84%) solid;
+  cursor: pointer;
+}
+
+.step-1 > .form-fields > input {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px #d6d9e6 solid;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+.step-1 > .form-fields > .label > #error-label {
+  color: hsl(354, 84%, 57%);
+}
+/* .step-1 > .form-fields > input:invalid {
+    border: 1px hsl(354, 84%, 57%) solid;
+    display: block;
+  } */
+
+/* .error-label ~ .step-1 > .form-fields > input:invalid[focus="true"] {
+    display: block;
+  } */
+
+.step-1 > .form-fields > input:focus {
+  outline: none;
+}
+
+.step > h2 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.step-1 > p,
+.step-2 > p,
+.step-3 > p,
+.step-4 > p {
+  margin: 15px auto;
+  line-height: 1.5;
+  color: hsl(229, 24%, 87%);
+}
+
+.step-1 > .form-fields > .label > label {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-fields {
+  width: 100%;
+}
+/* step 2 */
+
+.step-2 > li {
+  list-style: none;
+  width: 100%;
+  height: 70px;
+  margin: 20px auto;
+  /* background-color: #d6d9e6; */
+  border-radius: 10px;
+  border: 1px #d6d9e6 solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  /* border: 1px hsl(217, 100%, 97%) solid; */
+}
+
+.span {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+
+.price {
+  font-size: 12px;
+  margin-top: 5px;
+  color: hsl(229, 24%, 87%);
+}
+
+.price-bonus {
+  font-size: 12px;
+  font-weight: 500;
+  color: hsl(213, 96%, 18%);
+}
+
+.change {
+  color: hsl(229, 24%, 87%);
+}
+
+.change:hover {
+  color: hsl(243, 100%, 62%);
+}
+
+.step-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 50px;
+  background-color: hsl(217, 100%, 97%);
+  border-radius: 10px;
+}
+
+.toggle-cont {
+  width: 30px;
+  height: 15px;
+  background-color: hsl(213, 96%, 18%);
+  position: relative;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.ball > input[type="checkbox"] {
+  opacity: 0;
+  width: 30;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ball {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* step 3  */
+
+.step-1,
+.step-2,
+.step-3,
+.step-4 {
+  text-align: start;
+}
+
+.step-3 > li {
+  list-style: none;
+  width: 100%;
+  min-height: 50px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px #d6d9e6 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  /* border: 1px hsl(217, 100%, 97%) solid; */
+}
+
+.add-price {
+  flex-basis: 90%;
+  font-size: 12px;
+  margin-top: 5px;
+  justify-self: start;
+}
+
+/* step 4 */
+
+.step-4a {
+  width: 100%;
+  background-color: hsl(216, 100%, 97%);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+}
+
+.total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+  padding: 20px;
+}
+
+.plan-result {
+  border-bottom: 1px solid #d6d9e6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .step-1,
+  .step-2,
+  .step-3,
+  .step-4,
+  .finish {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: -105px;
+  }
+}
+
+@media (min-width: 768px) {
+  .step {
+    /* position: absolute; */
+    width: 100%;
+    height: 50vh;
+    margin-top: 0px;
+    /* position: absolute; */
+    /* +top: -70px; */
+  }
+
+  .step-1 > .form-fields > input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px #d6d9e6 solid;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-top: 3px;
+  }
+
+  .step > h2 {
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+  }
+
+  .step-1 > p,
+  .step-2 > p,
+  .step-3 > p,
+  .step-4 > p {
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+  .step-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    justify-content: space-between;
+  }
+  .step-2 > h2 {
+    grid-area: 1 / span 3;
+  }
+  .step-2 > p {
+    grid-area: 2 / span 3;
+  }
+  .step-2 > li {
+    width: 120px;
+    min-height: 170px;
+    margin: 20px auto;
+    grid-area: 3;
+
+    border-radius: 10px;
+    border: 1px #d6d9e6 solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    /* border: 1px hsl(217, 100%, 97%) solid; */
+  }
+
+  .step-2 > .step-toggle {
+    grid-area: 4 / span 3;
+  }
+}

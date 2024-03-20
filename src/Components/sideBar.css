@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.side-bar {
+  background-image: url("../../src/assets/images/bg-sidebar-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 768px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+  gap: 25px;
+}
+
+.num {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px hsl(206, 94%, 87%) solid;
+  color: hsl(206, 94%, 87%);
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+}
+
+@media (max-width: 768px) {
+  .side-bar {
+    background-image: url("../../src/assets/images/bg-sidebar-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 768px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    gap: 25px;
+  }
+
+  .step-span {
+    display: none;
+  }
+
+  .step-plans {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .side-bar {
+    background-image: url("../../src/assets/images/bg-sidebar-desktop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 40px;
+    gap: 10px;
+    grid-row: 1/3;
+    border-radius: 15px;
+  }
+
+  .step-box {
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .step-box > div {
+    text-align: start;
+  }
+
+  .step-span {
+    color: hsl(206, 94%, 87%);
+    font-size: 12px;
+  }
+
+  .step-plans {
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .num {
+    width: 40px;
+    height: 40px;
+    font-weight: 700;
+  }
+}
